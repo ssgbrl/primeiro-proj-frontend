@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro de Usuário</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <script src="./js/index.js" defer></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/ade0d3cee7.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Cadastro de Usuário</h1>
+        </header>
+         
+        <main>
+            <form>
+                <h3>Por favor, preencha os campos abaixo</h3>
+                <section class="inputs-container">
+                    <input type="text" id="field-name" placeholder="Seu Nome" required><br>
+                    <input type="email" id="field-email" placeholder="seu@email.com" required><br>
+                    <input type="tel" id="field-tel" placeholder="Número de Telefone" pattern="[1-9]{2}[2-9]{5}[0-9]{4}" required><br>
+                    <div class="password-container">
+                        <input type="password" id="field-password" class="field-password" placeholder="Sua Senha" required>
+                        <i class="fa-solid fa-eye" id="eye" onclick="showPassword()"></i>
+                        <i class="fa-solid fa-eye-slash" id="eye-slash" onclick="showPassword()"></i>
+                    </div>
+                </section>
+                        
+                <section class="tos-agreement">
+                    <div>
+                        <input type="checkbox" required>
+                        <span>Li e concordo com os <a href="#" id="link-text">Termos de Uso</a></span>
+                    </div>
+                </section>
+                
+                <input type="submit" id="btn-login" value="Cadastrar">
+
+                <section class="links-container">
+                    <span>Ou entre com:</span>
+                    <aside>
+                        <a href="#"><i class="fa-brands fa-linkedin linkedin"></i></a>
+                    </aside>
+                </section>
+
+                <footer>
+                </footer>
+            </form>
+        </main>
+    </body>
+</html>
